@@ -31,10 +31,10 @@ export default function Footer() {
                                     {/* <Link to="/Rules" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                     قوانین و مقررات
                                 </Link> */}
-                                    <Link to="/AboutUs" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
+                                    <Link to="/sinshin/AboutUs" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                         درباره ما
                                     </Link>
-                                    <Link to="/Gallery" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
+                                    <Link to="/sinshin/Gallery" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                         گالری
                                     </Link>
                                 </div>
