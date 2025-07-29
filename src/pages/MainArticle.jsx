@@ -2,6 +2,8 @@ import React from 'react'
 import { useParams,Link } from 'react-router'
 import { Swiper, SwiperSlide } from "swiper/react";
 import Datas from '../datas/ArticlesData'
+import getImageUrl from '../utils/getImageUrl'
+
 
 
 // Import Swiper styles
@@ -101,7 +103,7 @@ function MainArticleData() {
                 {MainArticleData.images.map((src, index) => {
                   return (
                     <SwiperSlide key={index}>
-                      <img src={src} className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                      <img src={getImageUrl(src)} className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                     </SwiperSlide>
                   )
                 })}

@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import { Routes ,Route,Link  } from 'react-router'
+import getImageUrl from '../utils/getImageUrl'
+
 
 export default function Product(props) {
     
@@ -11,7 +13,7 @@ export default function Product(props) {
 
                 {/* عکس و درصد تخفیف  */}
                 <div className="relative mb-2  md:mb-5">
-                    <img className='mx-auto rounded-xl' src={props.cover} loading="lazy" alt="P 1" />
+                    <img className='mx-auto rounded-xl' src={getImageUrl(props.cover)} loading="lazy" alt="P 1" />
                     { props.offer != 0 &&
                         <div className="absolute top-1.5 right-1.5 block h-5 md:h-[30px] text-xs/[22px] md:text-base/[34px] px-2.5 md:px-3.5 font-DanaDemiBold bg-pink-400 text-white dark:text-zinc-700 rounded-full ">
                             <span>

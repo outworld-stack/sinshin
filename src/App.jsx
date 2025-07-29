@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <>
-      {(router.props.match.pathname === "/home" || router.props.match.pathname === "/" || router.props.match.pathname === "/sinshin" || router.props.match.pathname === "/sinshin/home")? "" : <Header/>}
+      {(router.props.match.pathname === "/" || router.props.match.pathname === "/sinshin")? "" : <Header/>}
       {router}
       <Footer />
       <ScrollToTop/>

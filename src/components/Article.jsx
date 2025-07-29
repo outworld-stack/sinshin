@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import { Routes ,Route,Link  } from 'react-router'
+import getImageUrl from '../utils/getImageUrl'
+
 
 export default function Article(props) {
     console.log(props);
@@ -9,7 +11,7 @@ export default function Article(props) {
         <div class="flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-red-50/50 border border-gray-200 hover:shadow-sm shadow-gray-200  rounded-2xl">
             {/* <!-- عکس مقاله  --> */}
             <div class="relative w-[130px] h-[130px] shrink-0 sm:w-auto sm:h-auto sm:mb-4 rounded-2xl rounded-bl-3xl overflow-hidden">
-                <img src={props.coverImg} class="h-full sm:h-auto object-cover" alt="blog 1"></img>
+                <img src={getImageUrl(props.coverImg)} class="h-full sm:h-auto object-cover" alt="blog 1"></img>
             </div>
             <div class="w-full flex flex-col sm:flex-row items-start justify-between font-VazirLight md:font-VazirMedium">
                 {/* <!-- عنوان مقاله به صورت لینک --> */}

@@ -9,7 +9,7 @@ export default function Header() {
 
               <div className='flex items-center justify-between mx-auto w-[95%] sm:w-[90%] 2xl:w-[80%]'>
                   {/* کلمه سین شین  */}
-                  <Link to={"/home"} className="relative inline-block before:absolute  before:-inset-1.5 sm:before:-inset-2.5 before:block before:skew-y-3 before:bg-pink-500">
+                  <Link to={"/sinshin"} className="relative inline-block before:absolute  before:-inset-1.5 sm:before:-inset-2.5 before:block before:skew-y-3 before:bg-pink-500">
                       <span className="relative font-MorabbaBold text-xl sm:text-4xl select-none text-white">
                           سین شین
                       </span>
