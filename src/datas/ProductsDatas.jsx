@@ -1,6 +1,6 @@
 let Posts = [
 
-    {id:1,title:"نوشابه قوطی اسپرایت",special:0,price:"450,000",includes:["نوشابه گازدار اسپرایت"],offer: 0,cover:['../../images/product-drink-sprite.png'],img:['../../images/product-drink-sprite.png'],timeToPrepare:1,weight:1500,tag:"drink",comments:[]},
+    {id:1,title:"نوشابه قوطی اسپرایت",special:0,price:"450,000",includes:["نوشابه گازدار اسپرایت"],offer: 0,cover:['/images/product-drink-sprite.png'],img:['../../images/product-drink-sprite.png'],timeToPrepare:1,weight:1500,tag:"drink",comments:[]},
 
     {id:2,title:"نوشابه قوطی فانتا",special:0,price:"450,000",includes:["نوشابه گازدار فانتا"],offer: 0,cover:['../../images/product-drink-fanta.png'],img:['../../images/product-drink-fanta.png'],timeToPrepare:1,weight:900,tag:"drink",comments:[]},
 
