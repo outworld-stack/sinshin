@@ -2,7 +2,6 @@ import React from 'react'
 import { useParams,Link } from 'react-router'
 import { Swiper, SwiperSlide } from "swiper/react";
 import Datas from '../datas/ArticlesData'
-import getImageUrl from '../utils/getImageUrl'
 
 
 
@@ -18,6 +17,7 @@ function MainArticleData() {
 
   let MainArticleData = Datas.find(article => article.id == params.id)
 
+  const BASE_URL = import.meta.env.BASE_URL;
 
 
   return (
@@ -103,7 +103,7 @@ function MainArticleData() {
                 {MainArticleData.images.map((src, index) => {
                   return (
                     <SwiperSlide key={index}>
-                      <img src={getImageUrl(src)} className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                      <img src={BASE_URL+src} className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                     </SwiperSlide>
                   )
                 })}

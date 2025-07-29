@@ -7,7 +7,6 @@ import ProductsDatas from '../datas/ProductsDatas'
 import Product from '../components/Product'
 import ArticlesData from '../datas/ArticlesData'
 import Article from '../components/Article'
-import getImageUrl from '../utils/getImageUrl'
 import main from '/images/main.png'
 
 
@@ -21,11 +20,11 @@ import 'swiper/css/navigation';
 
 
 export default function Home() {
-
+  
   const [menus,setMenus] = useState(MenusData)
   const [products,setProducts] = useState(ProductsDatas.toReversed())
   const [articles,setArticles] = useState(ArticlesData.toReversed())
- 
+  
 
 
   const sliderRef = useRef(null);
