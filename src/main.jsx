@@ -1,5 +1,8 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router'
+const base = document.createElement('base')
+base.setAttribute('href', import.meta.env.BASE_URL)
+document.head.insertBefore(base, document.head.firstChild)
 
 import App from './App.jsx'
 
