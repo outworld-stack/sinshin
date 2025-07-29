@@ -50,7 +50,7 @@ let Articles = [
         title:"طرز تهیه پاستا با سس آلفردو و مرغ",
         tag:"pasta",
         tag2:"پاستا",
-        publisherDate:14031125,
+        publisherDate:"14031125",
         publisherDate2:["1403","آذر","22"],
         coverImg:"../../images/article-pasta3.webp",
         images:[
@@ -114,7 +114,7 @@ let Articles = [
         title:"طرز تهیه شیرموز بستنی تقویت عمومی بدن",
         tag:"dessert",
         tag2:"دسر",
-        publisherDate:14031125,
+        publisherDate:"14031125",
         publisherDate2:["1403","دی","10"],
         coverImg:"../../images/article-coffee-1-Cover.png",
         images:[
@@ -160,7 +160,7 @@ let Articles = [
         title:"طرز تهیه کباب کوبیده اعلا مخصوص مناسبت ها",
         tag:"kebab",
         tag2:"کباب",
-        publisherDate:14031125,
+        publisherDate:"14031125",
         publisherDate2:["1403","بهمن","25"],
         coverImg:"../../images/article-coffee-1-Cover.png",
         images:[

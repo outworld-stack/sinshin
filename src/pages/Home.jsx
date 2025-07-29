@@ -8,6 +8,7 @@ import Product from '../components/Product'
 import ArticlesData from '../datas/ArticlesData'
 import Article from '../components/Article'
 
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Pagination ,Navigation } from 'swiper/modules';
 
@@ -78,7 +79,7 @@ export default function Home() {
                 
             </div>
 
-            <img src="../../images/main.png" alt="" class="absolute top-[310px] scale-150 -left-[50%] sm:top-[30%] sm:-left-[55%] sm:scale-125 md:scale-110 md:top-52 md:-left-[45%] lg:scale-100 lg:top-20 xl:top-12 lg:-left-[45%] xl:-left-[30%] overflow-x-clip"/>
+            <img src={"/images/main.png"} alt="" class="absolute top-[310px] scale-150 -left-[50%] sm:top-[30%] sm:-left-[55%] sm:scale-125 md:scale-110 md:top-52 md:-left-[45%] lg:scale-100 lg:top-20 xl:top-12 lg:-left-[45%] xl:-left-[30%] overflow-x-clip"/>
 
             
         </div>

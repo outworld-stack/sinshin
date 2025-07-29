@@ -40,7 +40,7 @@ function MainArticleData() {
                   نویسنده در سین شین
                 </cite>
                 <cite class="px-2 font-DanaMedium text-sm text-gray-500">
-                  {MainArticleData.publisherDate.slice(0, 4)}/{MainArticleData.publisherDate.slice(4, 6)}/{MainArticleData.publisherDate.slice(6, 8)}
+                  {MainArticleData.publisherDate.slice(0,4)}/{MainArticleData.publisherDate.slice(4,6)}/{MainArticleData.publisherDate.slice(6, 8)}
                 </cite>
               </div>
             </figcaption>

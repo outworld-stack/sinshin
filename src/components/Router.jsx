@@ -11,6 +11,8 @@ import Gallery from './../pages/Gallery'
 let routes = [
     {path:"/" , element:<Home/>},
     {path:"/home" , element:<Home/>},
+    {path:"/sinshin" , element:<Home/>},
+    {path:"/sinshin/home" , element:<Home/>},
     {path:"/products" , element:<Products/>},
     {path:"/articles" , element:<Articles/>},
     {path:"/product/:id" , element:<MainProduct/>},
