@@ -8,7 +8,7 @@ import Product from '../components/Product'
 import ArticlesData from '../datas/ArticlesData'
 import Article from '../components/Article'
 import getImageUrl from '../utils/getImageUrl'
-import main from '../../public/images/main.png'
+import main from '/images/main.png'
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
