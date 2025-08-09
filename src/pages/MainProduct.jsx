@@ -143,7 +143,7 @@ export default function MainProduct() {
                         grabCursor={true}
                         initialSlide={2}
                         speed={500}
-                        loop={true}
+                        loop={false}
                         rotate={`${true}`}
                         mousewheel={{
                             invert:true
@@ -212,10 +212,10 @@ export default function MainProduct() {
                     <div className="flex flex-col justify-center my-[2px] mr-2.5">
 
 
-                        <div key={MainProductData.id}>
+                        <div>
                           {MainProductData.includes.length !== 0 && MainProductData.includes.map((item,index) => {
                             return(
-                                    <span className="font-DanaRegular text-sm text-gray-700">
+                                    <span key={index} className="font-DanaRegular text-sm text-gray-700">
                                         {item}{MainProductData.includes.length - 1 === index ? '' : ' , '}
                                     </span>
                             )

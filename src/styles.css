@@ -52,6 +52,10 @@
 
 
 
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 30px ;
+}
 
 .swiper-pagination-bullet {
   background: #ee6bbc;

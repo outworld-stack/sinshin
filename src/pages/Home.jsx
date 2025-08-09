@@ -1,6 +1,6 @@
 import React ,{useState,useRef,useCallback} from 'react'
 import Textra from 'react-textra'
-import {  Routes ,Route,Link } from 'react-router'
+import { Link } from 'react-router'
 import MenusData from '../datas/MenuData'
 import Menu from '../components/Menu'
 import ProductsDatas from '../datas/ProductsDatas'
@@ -68,14 +68,16 @@ export default function Home() {
                   {/* <!-- <span className="font-LuckiestGuyRegular">hello</span> --> */}
                 </div>
               </div>
-            <Link to={"/sinshin/products"}  className='font-DanaRegular text-sm flex items-center justify-between sm:cursor-pointer gap-x-2 p-3 px-4 text-white rounded-full bg-orange-400 mt-8 sm:mt-14'>
+            <Link to={"/sinshin/products"} role="tab"
+              aria-controls="products"
+              aria-selected="true" className='font-DanaRegular text-sm flex items-center justify-between  gap-x-2 p-3 px-4 text-white rounded-full bg-orange-400 mt-8 sm:mt-14'>
 
-                دیدن محصولات
 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 rotate-180">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
               </svg>
-
+              دیدن محصولات
 
             </Link>
                 
@@ -206,7 +208,7 @@ export default function Home() {
                         ))
                       }
                     </div>
-                    <div className="swiper-pagination absolute w-full text-center  pt-15"></div>
+                    <div className="swiper-pagination"></div>
 
 
                     </Swiper>
