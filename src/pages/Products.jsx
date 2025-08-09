@@ -43,16 +43,16 @@ export default function Products() {
 
     <div>
 
-        <section class="mt-[5vh] md:mt-[10vh]">
+        <section className="mt-[5vh] md:mt-[10vh]">
 
-          <div class="mx-auto w-[95%] sm:w-[90%] 2xl:w-[80%] overflow-x-scroll">
+          <div className="mx-auto w-[95%] sm:w-[90%] 2xl:w-[80%] overflow-x-scroll">
           {/* overflow-y-hidden */}
               
               <div>
-                  <div class="menu text-sm md:text-lg font-DanaMedium text-center text-gray-500 border-b border-gray-200">
-                      <ul class="flex -mb-px">
-                          <li class="me-2">
-                              <button onClick={()=>{setMenus('all'); filterProducts('all')}} class={`${menus === 'all' ? "ActiveTabButton" : "inActiveTabButton" }`}>
+                  <div className="menu text-sm md:text-lg font-DanaMedium text-center text-gray-500 border-b border-gray-200">
+                      <ul className="flex -mb-px">
+                          <li className="me-2">
+                              <button onClick={()=>{setMenus('all'); filterProducts('all')}} className={`${menus === 'all' ? "ActiveTabButton" : "inActiveTabButton" }`}>
                                   همه
                               </button>
                           </li>
@@ -83,9 +83,9 @@ export default function Products() {
 
         </section>
 
-        <section class="mt-[2vh] md:mt-[8vh]">
+        <section className="mt-[2vh] md:mt-[8vh]">
 
-          <div class="mx-auto w-[95%] sm:w-[90%] 2xl:w-[80%]">
+          <div className="mx-auto w-[95%] sm:w-[90%] 2xl:w-[80%]">
 
             <div className='grid grid-cols-2 gap-5 lg:grid-cols-3 lg:gap-10 2xl:grid-cols-4 min-h-screen'>
 
@@ -100,7 +100,7 @@ export default function Products() {
                   </>
                 ):(
                   <>
-                    <div class="text-black text-4xl font-DanaDemiBold">
+                    <div className="text-black text-4xl font-DanaDemiBold">
                       محصولی وجود ندارد
                     </div>
                   </>

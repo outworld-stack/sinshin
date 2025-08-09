@@ -89,14 +89,14 @@ const BASE_URL = import.meta.env.BASE_URL;
                             <span className="font-DanaMedium text-xs md:text-xl tracking-tighter">{props.price}</span>
                             {
                                 props.offer ==0 &&
-                                <span className="font-DanaDemiBold hidden xl:inline text-sm ">ریال</span>
+                                <span className="sm:font-DanaDemiBold font-MorabbaLight text-sm ">ریال</span>
                             }
                         </div>
                         {
                             props.offer !=0 &&
                             <div className="text-pink-600">
                                 <span className="font-DanaMedium text-xs md:text-xl tracking-tighter">{props.price}</span>
-                                <span className="font-DanaMedium lg:font-DanaDemiBold  xl:inline text-sm ">ریال</span>
+                                <span className="font-DanaMedium lg:font-DanaDemiBold  text-sm ">ریال</span>
                             </div>
                         }
                     </div>

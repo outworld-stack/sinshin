@@ -47,7 +47,7 @@ export default function MainProduct() {
                         </svg>
                     </Link>
                     <div className="breadcrumb__item">
-                        <Link to={"/Products"}>
+                        <Link to={"/sinshin/Products"}>
                             محصولات
                         </Link>
                     </div>
