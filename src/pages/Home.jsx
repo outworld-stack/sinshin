@@ -70,14 +70,14 @@ export default function Home() {
               </div>
             <Link to={"/sinshin/products"} role="tab"
               aria-controls="products"
-              aria-selected="true" className='font-DanaRegular text-sm flex items-center justify-between  gap-x-2 p-3 px-4 text-white rounded-full bg-orange-400 mt-8 sm:mt-14'>
+              aria-selected="true" className='font-DanaRegular text-sm flex items-center justify-between max-sm:z-50 gap-x-2 p-3 px-4 text-white rounded-full bg-orange-400 mt-8 sm:mt-14'>
 
+              دیدن محصولات
 
-
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
               </svg>
-              دیدن محصولات
+
 
             </Link>
                 
