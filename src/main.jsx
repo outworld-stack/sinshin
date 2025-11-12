@@ -1,4 +1,4 @@
-import { createRoot } from 'react-dom/client';
+// import { createRoot } from 'react-dom/client';
 import ReactDOM from 'react-dom/client';
 import React from 'react';
 import { BrowserRouter } from 'react-router';
@@ -35,4 +35,4 @@ if (container.hasChildNodes()) {
       </BrowserRouter>
 
     </HelmetProvider>
-)}
+)};

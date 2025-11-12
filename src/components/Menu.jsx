@@ -1,6 +1,4 @@
 import React from 'react'
-import { Routes ,Route,Link  } from 'react-router'
-
 
 
 export default function Menu(props) {
