@@ -26,13 +26,13 @@
   },
   "reactSnap": {
     "source": "dist",
-    "publicPath": "/sinshin/",
+    "publicPath": "/",
     "include": [
-      "/sinshin/",
-      "/sinshin/products",
-      "/sinshin/articles",
-      "/sinshin/aboutus",
-      "/sinshin/Gallery"
+      "/",
+      "/products",
+      "/articles",
+      "/aboutus",
+      "/Gallery"
     ],
     "skipThirdPartyRequests": true,
     "crawl": false
