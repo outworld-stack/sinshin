@@ -14,7 +14,6 @@ export default function Articles() {
     const [shownArticles, setShownArticles] = useState([...Datas].reverse())
 
 
-
     const filterArticles = (state) => {
         MenusData.map(menu => {
             switch (state) {
@@ -34,9 +33,6 @@ export default function Articles() {
             }
         })
     };
-
-
-
 
     return (
 

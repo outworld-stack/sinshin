@@ -24,9 +24,9 @@ function AboutUs() {
                 <meta property="article:section" content="درباره ما" />
                 <meta property="article:published_time" content="2025-03-01T12:00:00Z" />
             </Helmet>
+
+
             <div>
-
-
                 <section className="py-14 lg:py-24  mt-[5vh] relative">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
@@ -390,7 +390,6 @@ function AboutUs() {
 
                     </div>
                 </section>
-
             </div>
         </>
     )
