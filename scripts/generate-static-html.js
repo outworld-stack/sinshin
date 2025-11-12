@@ -7,11 +7,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '..');
 
 const routes = [
-  '/sinshin/',
-  '/sinshin/products',
-  '/sinshin/articles',
-  '/sinshin/aboutus',
-  '/sinshin/Gallery'
+  '/',
+  '/products',
+  '/articles',
+  '/aboutus',
+  '/Gallery'
 ];
 
 async function generateStaticHTML() {
