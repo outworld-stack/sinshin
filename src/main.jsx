@@ -1,19 +1,38 @@
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router'
-const base = document.createElement('base')
+import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
+import React from 'react';
+import { BrowserRouter } from 'react-router';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+const base = document.createElement('base');
 base.setAttribute('href', import.meta.env.BASE_URL)
 document.head.insertBefore(base, document.head.firstChild)
 
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-)
 
+const container = document.getElementById('root')
 
-// document.getElementsByTagName('html')[0].setAttribute("dir", "rtl");
-// document.getElementsByTagName('html')[0].setAttribute("lang", "fa");
-//Or you can do it where ever you want, base on user selected language, or something else 
-// serviceWorker.unregister();
+if (!container) {
+  throw new Error('Root element not found')
+}
+
+const root = ReactDOM.createRoot(container)
+
+if (container.hasChildNodes()) {
+  root.hydrate(
+    <HelmetProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </HelmetProvider>
+  )
+} else {
+  root.render(
+    <HelmetProvider>
+      {/* <React.StrictMode> */}
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+
+    </HelmetProvider>
+)}

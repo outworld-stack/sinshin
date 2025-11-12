@@ -1,18 +1,18 @@
-import React,{useState} from 'react'
-import { Routes ,Route,Link  } from 'react-router'
+import { useState } from 'react'
 import Datas from '../datas/ProductsDatas'
 import MenusData from '../datas/MenuData'
 import Product from '../components/Product'
 import TabMenu from '../components/TabMenu'
+import { Helmet } from 'react-helmet-async'
 
 
 
 export default function Products() {
 
-  
-  const [products,setProducts] = useState(Datas.toReversed())
-  const [menus,setMenus] = useState('all')
-  const [shownProducts,setShownProducts] = useState(Datas.toReversed())
+
+  const [products, setProducts] = useState([...Datas].reverse())
+  const [menus, setMenus] = useState('all')
+  const [shownProducts, setShownProducts] = useState([...Datas].reverse())
 
 
 
@@ -24,7 +24,7 @@ export default function Products() {
           break
         }
         case menu.tag: {
-          const filteredProducts = products.filter(product => product.tag === menu.tag)          
+          const filteredProducts = products.filter(product => product.tag === menu.tag)
           setShownProducts(filteredProducts)
           break
         }
@@ -41,44 +41,57 @@ export default function Products() {
 
   return (
 
-    <div>
+    <>
+      <Helmet>
+        <title>سین‌شین - محصولات</title>
+        <meta name="description" content="سین‌شین - محصولات" />
+        <link rel="canonical" href="https://www.sinshini.ir/products" />
+        <meta property="og:title" content="سین‌شین - محصولات" />
+        <meta property="og:description" content="سین‌شین - محصولات" />
+        <meta property="og:url" content="https://www.sinshini.ir/products" />
+        <meta property="og:type" content="products" />
+        <meta property="og:image" content="" />
+        <meta property="article:section" content="products" />
+        <meta property="article:published_time" content="2025-03-01T00:00:00+03:30" />
+      </Helmet>
+      <div>
 
         <section className="mt-[5vh] md:mt-[10vh]">
 
           <div className="mx-auto w-[95%] sm:w-[90%] 2xl:w-[80%] overflow-x-scroll">
-          {/* overflow-y-hidden */}
-              
-              <div>
-                  <div className="menu text-sm md:text-lg font-DanaMedium text-center text-gray-500 border-b border-gray-200">
-                      <ul className="flex -mb-px">
-                          <li className="me-2">
-                              <button onClick={()=>{setMenus('all'); filterProducts('all')}} className={`${menus === 'all' ? "ActiveTabButton" : "inActiveTabButton" }`}>
-                                  همه
-                              </button>
-                          </li>
-                          {
-                            MenusData.map(menu => (
-                              <TabMenu
-                                menus={menus}
-                                menuTag={menu.tag}
-                                onSelect={() => {
-                                  setMenus(menu.tag);
-                                  filterProducts(menu.tag);
-                                }}
-                                key={menu.id}
-                                >
+            {/* overflow-y-hidden */}
 
-                                {menu.title}
+            <div>
+              <div className="menu text-sm md:text-lg font-DanaMedium text-center text-gray-500 border-b border-gray-200">
+                <ul className="flex -mb-px">
+                  <li className="me-2">
+                    <button onClick={() => { setMenus('all'); filterProducts('all') }} className={`${menus === 'all' ? "ActiveTabButton" : "inActiveTabButton"}`}>
+                      همه
+                    </button>
+                  </li>
+                  {
+                    MenusData.map(menu => (
+                      <TabMenu
+                        menus={menus}
+                        menuTag={menu.tag}
+                        onSelect={() => {
+                          setMenus(menu.tag);
+                          filterProducts(menu.tag);
+                        }}
+                        key={menu.id}
+                      >
 
-                              </TabMenu>
-                            ))
-                          }
+                        {menu.title}
+
+                      </TabMenu>
+                    ))
+                  }
 
 
-                      </ul>
-                  </div>
+                </ul>
               </div>
-              
+            </div>
+
           </div>
 
         </section>
@@ -92,29 +105,30 @@ export default function Products() {
               {
                 shownProducts.length !== 0 ? (
                   <>
-                  {shownProducts.map(product => (
+                    {shownProducts.map(product => (
 
-                    <Product key={product.id} {...product} />
+                      <Product key={product.id} {...product} />
 
-                  ))}
+                    ))}
                   </>
-                ):(
+                ) : (
                   <>
                     <div className="text-black text-4xl font-DanaDemiBold">
                       محصولی وجود ندارد
                     </div>
                   </>
                 )
-                
+
               }
 
 
             </div>
-              
+
           </div>
 
         </section>
 
-    </div>
+      </div>
+    </>
   )
 }
