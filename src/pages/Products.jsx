@@ -47,7 +47,7 @@ export default function Products() {
         <meta name="description" content="سین‌شین - محصولات" />
         <link rel="canonical" href="https://www.sinshini.ir/products" />
         <meta property="og:title" content="سین‌شین - محصولات" />
-        <meta property="og:description" content="سین‌شین - محصولات" />
+        <meta property="og:description" content=" محصولات جذابی تولید میکنه حتما به ما سر بزن سین‌شین - " />
         <meta property="og:url" content="https://www.sinshini.ir/products" />
         <meta property="og:type" content="products" />
         <meta property="og:image" content="" />

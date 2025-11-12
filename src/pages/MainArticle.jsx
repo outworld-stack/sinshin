@@ -26,10 +26,10 @@ function MainArticleData() {
     <>
       <Helmet>
         <title>{`سین‌شین - ${MainArticleData.title}`}</title>
-        <meta name="description" content={MainArticleData.simpleDescription.slice(0,160) + '...'} />
+        <meta name="description" content={MainArticleData.simpleDescription.slice(0,160) + '.....'} />
         <link rel="canonical" href={`https://www.sinshini.ir/article/${params.id}`} />
         <meta property="og:title" content={`سین‌شین - ${MainArticleData.title}`} />
-        <meta property="og:description" content={MainArticleData.simpleDescription.slice(0,160) + '...'} />
+        <meta property="og:description" content={MainArticleData.simpleDescription.slice(0,160) + '.....'} />
         <meta property="og:url" content={`https://www.sinshini.ir/article/${params.id}`} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={MainArticleData.images[0]} />
@@ -38,7 +38,7 @@ function MainArticleData() {
       </Helmet>
       <section className="mt-[5vh] md:mt-[10vh]">
         <div className="mx-auto w-[95%] sm:w-[90%] 2xl:w-[80%]">
-          <div className="mb-6 relative bg-white  rounded-2xl shadow-sm pt-10 mt-[5vh] pb-8 md:px-16 px-5">
+          <div className="mb-6 relative bg-white  rounded-1xl shadow-sm pt-10 mt-[5vh] pb-8 md:px-16 px-5">
 
             {/* <!-- عنوان نام نویسنده تاریخ انتشار  --> */}
             <figure className="max-w-screen-sm ">
