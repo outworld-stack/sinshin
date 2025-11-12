@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://outworld-stack.github.io/sinshin/sitemap-main.xml</loc>
+    <loc>https://www.sinshini.ir/sitemap-main.xml</loc>
     <lastmod>2025-11-12</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://outworld-stack.github.io/sinshin/sitemap-products.xml</loc>
+    <loc>https://www.sinshini.ir/sitemap-products.xml</loc>
     <lastmod>2025-11-12</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://outworld-stack.github.io/sinshin/sitemap-articles.xml</loc>
+    <loc>https://www.sinshini.ir/sitemap-articles.xml</loc>
     <lastmod>2025-11-12</lastmod>
   </sitemap>
 </sitemapindex>

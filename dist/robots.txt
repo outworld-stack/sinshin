@@ -4,6 +4,7 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
 
+# موتورهای جستجوی اصلی
 User-agent: Googlebot
 Allow: /
 
@@ -13,4 +14,5 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-Sitemap: https://outworld-stack.github.io/sinshin/sitemap-index.xml
+# سایت مپ
+Sitemap: https://www.sinshini.ir/sitemap-index.xml

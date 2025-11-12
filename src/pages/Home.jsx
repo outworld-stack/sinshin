@@ -12,7 +12,7 @@ import main from '/images/main.png'
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -30,23 +30,14 @@ export default function Home() {
 
   const sliderRef = useRef(null);
 
-  // const handlePrev = useCallback(() => {
-  //   if (!sliderRef.current) return;
-  //   sliderRef.current.swiper.slidePrev();
-  // }, []);
-
-  // const handleNext = useCallback(() => {
-  //   if (!sliderRef.current) return;
-  //   sliderRef.current.swiper.slideNext();
-  // }, []);
 
   return (
     <>
       <Helmet>
         <title>سین‌شین </title>
-        <meta name="description" content="سین شین، رستوران ایرانی  و مدرن" />
+        <meta name="description" content="سین شین، رستوران جذاب و مدرن ایرانی" />
         <link rel="canonical" href="https://www.sinshini.ir" />
-        <meta property="og:title" content="سین شین"/>
+        <meta property="og:title" content="سین شین" />
         <meta property="og:description" content="سین شین، رستوران ایرانی  و مدرن" />
         <meta property="og:url" content="https://www.sinshini.ir" />
         <meta property="og:type" content="homepage" />
@@ -64,7 +55,7 @@ export default function Home() {
 
               {/* <!-- کلمه سین شین  --> */}
               <span className="relative inline-block before:absolute before:-inset-3 before:block before:skew-y-3 before:bg-pink-500">
-                <span className="relative font-MorabbaBold text-4xl select-none text-white">
+                <span className="relative font-MorabbaBold text-3xl sm:text-4xl select-none text-white">
                   سین شین
                 </span>
               </span>
@@ -145,9 +136,9 @@ export default function Home() {
                 </div>
 
                 {/* <!-- pinky effect background  --> */}
-                {/* <!-- <div
-                        className="hidden lg:block absolute w-72  h-72 -top-48 -left-60 bg-pink-300 dark:bg-rose-400 opacity-15 dark:opacity-20 blur-2xl dark:blur-[190px] rounded-full -z-10">
-                    </div> --> */}
+                <div
+                  className="hidden lg:block absolute w-72  h-72 -top-48 -left-60 bg-pink-300 dark:bg-rose-400 opacity-15 dark:opacity-20 blur-2xl dark:blur-[190px] rounded-full -z-10">
+                </div>
               </div>
 
             </div>
