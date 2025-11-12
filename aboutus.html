@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="fa" dir=rtl>
-  <head>
-    <script type="module">
+
+<head>
+  <script type="module">
 import RefreshRuntime from "/sinshin/@react-refresh"
 RefreshRuntime.injectIntoGlobalHook(window)
 window.$RefreshReg$ = () => {}
@@ -9,29 +10,20 @@ window.$RefreshSig$ = () => (type) => type
 window.__vite_plugin_react_preamble_installed__ = true
 </script>
 
-    <script type="module" src="/sinshin/@vite/client"></script>
+  <script type="module" src="/sinshin/@vite/client"></script>
 
-    <meta charset="UTF-8" />
-    <meta name="description" content="سین شین کافه رستورانی متفاوت">
-    <meta name="keywords" content="sinshin, sinshini, food, سین شین, کافه, رستوران, غذا">
-    <meta name="author" content="outworld-stack">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/sinshin/hot2.svg" />
-    <link href="/sinshin/src/styles.css" rel="stylesheet">
-    <script type="text/javascript">
+  <meta charset="UTF-8" />
+  <meta name="description" content="سین شین کافه رستورانی متفاوت">
+  <meta name="keywords" content="sinshin, sinshini, food, سین شین, کافه, رستوران, غذا">
+  <meta name="author" content="outworld-stack">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/sinshin/hot2.svg" />
+  <link href="/sinshin/src/styles.css" rel="stylesheet">
 
-    (function (l) {
-      if (l.search[1] === '/') {
-        var decoded = l.search.slice(1).split('&').map(function (s) {
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-          l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    }(window.location))
-  </script>
   <script type="module" src="/sinshin/src/main.jsx"></script>
-</body>
+  <body>
+    <div id="root"></div>
+  </body>
+  </body>
 
 </html>
