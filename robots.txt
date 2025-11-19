@@ -13,4 +13,4 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-Sitemap: https://outworld-stack.github.io/sinshin/sitemap-index.xml
+Sitemap: https://www.sinshini.ir/sitemap.xml

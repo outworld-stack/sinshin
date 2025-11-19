@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import React from 'react';
 import { BrowserRouter } from 'react-router';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-const base = document.createElement('base');
-base.setAttribute('href', import.meta.env.BASE_URL)
-document.head.insertBefore(base, document.head.firstChild)
+// const base = document.createElement('base');
+// base.setAttribute('href', import.meta.env.BASE_URL)
+// document.head.insertBefore(base, document.head.firstChild)
 
 import App from './App.jsx'
 

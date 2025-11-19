@@ -245,7 +245,7 @@ function MainArticleData() {
                                 {item.name}
                               </span>
                               <span className="font-DanaRegular">
-                                {item.Highlight} گرم
+                                {item.Highlight}
                               </span>
                             </div>
                           )

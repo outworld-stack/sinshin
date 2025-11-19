@@ -10,14 +10,12 @@ import Gallery from './../pages/Gallery'
 
 let routes = [
     {path:"/" , element:<Home/>},
-    {path:"/sinshin/" , element:<Home/>},
-    {path:"/sinshin" , element:<Home/>},
-    {path:"/sinshin/products" , element:<Products/>},
-    {path:"/sinshin/articles" , element:<Articles/>},
-    {path:"/sinshin/product/:id" , element:<MainProduct/>},
-    {path:"/sinshin/article/:id" , element:<MainArticle/>},
-    {path:"/sinshin/aboutus" , element:<AboutUs/>},
-    {path:"/sinshin/Gallery" , element:<Gallery/>},
+    {path:"/products" , element:<Products/>},
+    {path:"/articles" , element:<Articles/>},
+    {path:"/product/:id" , element:<MainProduct/>},
+    {path:"/article/:id" , element:<MainArticle/>},
+    {path:"/aboutus" , element:<AboutUs/>},
+    {path:"/Gallery" , element:<Gallery/>},
     {path:"/*" , element:<NotFound/>},
 ]
 

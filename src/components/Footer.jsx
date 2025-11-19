@@ -11,13 +11,17 @@ export default function Footer() {
                     <div className="flex flex-col lg:flex-row items-center lg:items-start  justify-between">
                         {/* <!-- right  --> */}
                         <div className="flex flex-col items-center lg:items-start ml-5 lg:ml-0 gap-y-5">
-                            <span className="text-black dark:text-white text-base lg:text-xl font-DanaDemiBold">
+                            <h1 className="text-black dark:text-white text-base lg:text-xl font-DanaDemiBold">
                                 سین شین
-                            </span>
+                            </h1>
                             <span className="max-w-xs text-justify text-base text-slate-500 dark:text-slate-400 font-DanaMedium">
                                 سین شین یک کافه رستوران با کارکنانی پرانرژی و غذاهای خوشمزه
                                 منتظر قدوم شما عزیزان است تا تجربه  لحظه ی ماندگار رو براتون ثبت کنیم
                             </span>
+                            <h2 className='text-sm font-MorabbaMedium bg-gradient-to-l from-sky-500  to-emerald-500 bg-clip-text text-transparent '>
+                                بندرانزلی ، کیلومتر یک پاسداران
+                            </h2>
+                            
                         </div>
                         {/* <!-- left  --> */}
                         <div className="flex items-start mt-10 lg:mt-0 justify-between gap-x-5 sm:gap-x-16 md:gap-x-24 lg:gap-x-32 ">
@@ -31,10 +35,10 @@ export default function Footer() {
                                     {/* <Link to="/Rules" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                     قوانین و مقررات
                                 </Link> */}
-                                    <Link to="/sinshin/AboutUs" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
+                                    <Link to="/AboutUs" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                         درباره ما
                                     </Link>
-                                    <Link to="/sinshin/Gallery" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
+                                    <Link to="/Gallery" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                         گالری
                                     </Link>
                                 </div>
@@ -67,9 +71,9 @@ export default function Footer() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                                         </svg>
                                     </div>
-                                    <span className="select-none text-slate-500 dark:text-slate-400 text-lg font-LuckiestGuy tracking-wider hover:text-textMain dark:hover:text-textMain">
+                                    <h3 className="select-none text-slate-500 dark:text-slate-400 text-lg font-LuckiestGuy tracking-wider hover:text-textMain dark:hover:text-textMain">
                                         013-44552313
-                                    </span>
+                                    </h3>
                                 </div>
 
                             </div>

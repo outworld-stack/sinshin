@@ -10,7 +10,7 @@ const BASE_URL = import.meta.env.BASE_URL;
     <div>
         <div className=" p-2 md:p-5 bg-red-50/50 border border-gray-200 hover:shadow-sm shadow-gray-200 rounded-2xl">
         
-            <Link to={`/sinshin/product/${props.id}`}>
+            <Link to={`/product/${props.id}`}>
 
                 {/* عکس و درصد تخفیف  */}
                 <div className="relative mb-2  md:mb-5">

@@ -45,7 +45,7 @@ export default function Home() {
         <meta property="article:section" content="رستوران" />
         <meta property="article:published_time" content="2025-03-01T10:00:00Z" />
       </Helmet>
-      <div>
+      <div className='overflow-hidden'>
 
         <section className="flex items-center justify-center mt-[2vh] sm:mt-[5vh]  overflow-hidden">
 
@@ -72,7 +72,7 @@ export default function Home() {
                   {/* <!-- <span className="font-LuckiestGuyRegular">hello</span> --> */}
                 </div>
               </div>
-              <Link to={"/sinshin/products"} role="tab"
+              <Link to={"/products"} role="tab"
                 aria-controls="products"
                 aria-selected="true" className='font-DanaRegular text-sm flex items-center justify-between max-sm:z-50 gap-x-2 p-3 px-4 text-white rounded-full bg-orange-400 mt-8 sm:mt-14'>
 
@@ -243,9 +243,12 @@ export default function Home() {
                 <span className="text-black/60 dark:text-gray-500 font-DanaMedium shadow-md lg:shadow-none shadow-pink-50  bg-white lg:bg-transparent p-2 lg:p-0 rounded-lg lg:rounded-none text-base sm:text-xl">
                   جدیدترین محصولات
                 </span>
+                <div
+                  className="hidden lg:block absolute w-72  h-72 top-270 -right-20 bg-emerald-300 dark:bg-emerald-400 opacity-15 dark:opacity-20 blur-2xl dark:blur-[190px] rounded-full -z-10">
+                </div>
               </div>
               {/* <!-- سمت چپ  --> */}
-              <Link to="/sinshin/products" className="flex items-center gap-x-3 shadow-md lg:shadow-none shadow-pink-50 hover:bg-red-50 p-2 rounded-xl text-black/60 hover:text-black/75">
+              <Link to="/products" className="flex items-center gap-x-3 shadow-md lg:shadow-none shadow-pink-50 hover:bg-red-50 p-2 rounded-xl text-black/60 hover:text-black/75">
                 <span className="hidden md:inline-block font-DanaDemiBold">مشاهده همه محصولات</span>
                 <span className="inline-block md:hidden font-DanaDemiBold">مشاهده همه</span>
 
@@ -290,7 +293,7 @@ export default function Home() {
                 </span>
               </div>
               {/* <!-- سمت چپ  --> */}
-              <Link to="/sinshin/articles" className="flex items-center gap-x-3 shadow-md lg:shadow-none shadow-pink-50 hover:bg-red-50 p-2 rounded-xl text-black/60 hover:text-black/75">
+              <Link to="/articles" className="flex items-center gap-x-3 shadow-md lg:shadow-none shadow-pink-50 hover:bg-red-50 p-2 rounded-xl text-black/60 hover:text-black/75">
                 <span className="hidden md:inline-block font-DanaDemiBold ">مشاهده همه مطالب</span>
                 <span className="inline-block md:hidden font-DanaDemiBold ">مشاهده همه</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">

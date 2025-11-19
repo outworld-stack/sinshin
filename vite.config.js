@@ -12,5 +12,5 @@ export default defineConfig({
     outDir: 'dist'
   },
   publicDir: 'public',
-  base: "/sinshin/",
+  // base: "/sinshin/",
 });

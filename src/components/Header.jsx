@@ -9,7 +9,7 @@ export default function Header() {
 
               <div className='flex items-center justify-between mx-auto w-[95%] sm:w-[90%] 2xl:w-[80%]'>
                   {/* کلمه سین شین  */}
-                  <Link to={"/sinshin/"} className="relative inline-block before:absolute  before:-inset-1.5 sm:before:-inset-2.5 before:block before:skew-y-3 before:bg-pink-500">
+                  <Link to={"/"} className="relative inline-block before:absolute  before:-inset-1.5 sm:before:-inset-2.5 before:block before:skew-y-3 before:bg-pink-500">
                       <span className="relative font-MorabbaBold text-xl sm:text-4xl select-none text-white">
                           سین شین
                       </span>
@@ -18,15 +18,15 @@ export default function Header() {
                   </Link>
                   <div className='mr-10 sm:mr-20 flex items-center gap-x-5 sm:gap-x-10 text-gray-800'>
 
-                    <Link to={"/sinshin/products"} className='font-DanaMedium'>
+                    <Link to={"/products"} className='font-DanaMedium'>
                         محصولات
                     </Link>
 
-                    <Link to={"/sinshin/articles"} className='font-DanaMedium'>
+                    <Link to={"/articles"} className='font-DanaMedium'>
                         مقالات
                     </Link>
 
-                    <Link to={"/sinshin/aboutus"} className='font-DanaMedium'>
+                    <Link to={"/aboutus"} className='font-DanaMedium'>
                         درباره‌ما
                     </Link>
 

@@ -1,6 +1,8 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination, Navigation } from 'swiper/modules';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 import { Helmet } from 'react-helmet-async'
+import team from '/images/team.jpg';
+import aboutus from '/images/aboutus.jpg';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
@@ -14,7 +16,7 @@ function AboutUs() {
         <>
             <Helmet>
                 <title>سین‌شین - درباره ما</title>
-                <meta name="description" content="سین شین- کافه رستورانی متفاوت برای لحظه های شاد شما" />
+                <meta name="description" content="کادر سین شین - منوی سین شین" />
                 <link rel="canonical" href="https://www.sinshini.ir/aboutus" />
                 <meta property="og:title" content="سین‌شین - درباره ما" />
                 <meta property="og:description" content="سین شین- کافه رستورانی متفاوت برای لحظه های شاد شما" />
@@ -29,9 +31,9 @@ function AboutUs() {
             <div>
                 <section className="py-14 lg:py-24  mt-[5vh] relative">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
-                            <div className="img-box">
-                                <img src="https://9253440.fs1.hubspotusercontent-na1.net/hub/9253440/hubfs/Thoughtful-entrepreneur-working-on-laptop-at-desk-benefits-of-working-for-a-large-company-vs-small-company.jpg?width=1505&height=750&name=Thoughtful-entrepreneur-working-on-laptop-at-desk-benefits-of-working-for-a-large-company-vs-small-company.jpg" alt="About Us tailwind page"
+                        <div className="flex flex-col md:flex-row items-start gap-9">
+                            <div className="rounded-md">
+                                <img src={aboutus} alt="سین شین چیه؟ سین شین کیه؟"
                                     className="max-lg:mx-auto rounded-xl object-cover"></img>
                             </div>
                             <div className="lg:pl-[100px] flex items-center">
@@ -41,7 +43,17 @@ function AboutUs() {
                                         درباره سین شین
                                     </h1>
                                     <p className="font-DanaRegular text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto text-justify">
-                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                        
+
+                                        سین‌شین از سال ۱۳۹۶، در ابتدای خیابان پاسداران انزلی، با یک ایده ساده شروع شد:
+                                        ساختن تجربه‌ای متفاوت از طعم، کیفیت و حس نوستالژی.
+
+                                        ما فقط یک کافه فست‌فود نیستیم؛ سین‌شین جاییه که طعم خوب با خاطره‌سازی گره می‌خوره.
+                                        جایی برای خنده‌ها، قرارها، لحظه‌های تنهایی و دورهمی‌های بی‌بهانه.
+
+                                        تیم ما با عشق کار می‌کنه تا هر سفارش، فقط یه غذا نباشه — بلکه یه تجربه‌ شیرین باشه از حال خوب، طعم ناب و لبخند مشتری.
+                                        از همون اولین روز تا امروز، هدفمون یکی بوده:
+                                        هر بار که درِ سین‌شین باز می‌شه، یه حس آشنا و خوش برگرده… مثل دیدن یه دوست قدیمی
                                     </p>
                                 </div>
                             </div>
@@ -49,7 +61,7 @@ function AboutUs() {
                     </div>
                 </section>
 
-                <section className="py-14 lg:py-24 relative">
+                {/* <section className="py-14 lg:py-24 relative">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
                         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9 ">
 
@@ -128,20 +140,18 @@ function AboutUs() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
-                <section className="relative py-14 lg:py-24 ">
+                <section className="relative py-14 lg:py-24">
                     <div className=" mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden">
                         <div className="mb-24">
-                            <h2 className="font-DanaDemiBold text-4xl text-center font-bold text-gray-900 mb-6">
-                                با مدیران سین شین آشنا شوید
+                            <h2 className="font-DanaDemiBold text-4xl text-center font-bold text-gray-900 mb-20">
+                                کادر سین شین
                             </h2>
-                            <p className="text-lg font-DanaRegular text-gray-500 text-center">
-                                پیر مردی هر روز تو محله می دید پسر کی با کفش های پاره و پای برهنه با توپ پلاستیکی فوتبال بازی می کند، روزی رفت ی کتانی نو خرید و اومد و به پسرک گفت بیا این کفشا رو بپوش…
-                            </p>
+                            <img src={team} alt="سین‌شین از سال ۱۳۹۶، در ابتدای خیابان پاسداران انزلی، با یک ایده ساده شروع شد" />
                         </div>
-                        {/* <!--Slider Wrapper--> */}
-                        <Swiper
+
+                        {/* <Swiper
                             centeredSlides={false}
                             slidesPerView={1}
                             spaceBetween={32}
@@ -385,7 +395,7 @@ function AboutUs() {
 
                             <div className="swiper-pagination absolute w-full text-center  pt-10"></div>
                             <div className="swiper-scrollbar"></div>
-                        </Swiper>
+                        </Swiper> */}
 
 
                     </div>

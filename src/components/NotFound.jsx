@@ -11,7 +11,7 @@ export default function NotFound() {
           <p className="mb-4 text-lg font-DanaRegular text-gray-500 dark:text-gray-400">
             متاسفیم ، نتونستیم صفحه مورد نظر شمارو پیدا کنیم
           </p>
-          <Link to="/sinshin/" className="inline-flex text-white bg-blue-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-MorabbaMedium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">بازگشت به صفحه اصلی</Link>
+          <Link to="/" className="inline-flex text-white bg-blue-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-MorabbaMedium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">بازگشت به صفحه اصلی</Link>
         </div>
       </div>
     </section>

@@ -148,7 +148,7 @@ try {
   fs.writeFileSync(path.join(distPath, 'sitemap-main.xml'), mainSitemap);
   fs.writeFileSync(path.join(distPath, 'sitemap-products.xml'), productsSitemap);
   fs.writeFileSync(path.join(distPath, 'sitemap-articles.xml'), articlesSitemap);
-  fs.writeFileSync(path.join(distPath, 'sitemap-index.xml'), indexSitemap);
+  fs.writeFileSync(path.join(distPath, 'sitemap.xml'), indexSitemap);
 
   console.log('✅ سایت‌مپ‌ها با موفقیت generated شدند!');
   console.log('📁 محل فایل‌ها:', distPath);
