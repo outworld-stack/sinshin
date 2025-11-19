@@ -1,9 +1,9 @@
-import React from 'react'
-import { useRoutes  } from 'react-router'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import routes from './components/Router'
-import ScrollToTop from './components/ScrollToTop'
+import React from 'react';
+import { useRoutes } from 'react-router';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import routes from './components/Router';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
 
@@ -12,10 +12,10 @@ export default function App() {
 
   return (
     <>
-      {(router.props.match.pathname === "/" || router.props.match.pathname === "/sinshin" || router.props.match.pathname === "/sinshin/")? "" : <Header/>}
+      {(router.props.match.pathname === "/" || router.props.match.pathname === "/sinshin" || router.props.match.pathname === "/sinshin/") ? "" : <Header />}
       {router}
       <Footer />
-      <ScrollToTop/>
+      <ScrollToTop />
     </>
   )
 }
