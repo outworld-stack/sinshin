@@ -18,7 +18,7 @@ export default function Footer() {
                                 سین شین یک کافه رستوران با کارکنانی پرانرژی و غذاهای خوشمزه
                                 منتظر قدوم شما عزیزان است تا تجربه  لحظه ی ماندگار رو براتون ثبت کنیم
                             </span>
-                            <h2 className='text-sm font-MorabbaMedium bg-gradient-to-l from-sky-500  to-emerald-500 bg-clip-text text-transparent '>
+                            <h2 className='text-sm font-MorabbaMedium bg-gradient-to-l from-cyan-500  to-amber-500 bg-clip-text text-transparent '>
                                 بندرانزلی ، کیلومتر یک پاسداران
                             </h2>
                             

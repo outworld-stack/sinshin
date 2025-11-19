@@ -18,15 +18,15 @@ export default function Header() {
                   </Link>
                   <div className='mr-10 sm:mr-20 flex items-center gap-x-5 sm:gap-x-10 text-gray-800'>
 
-                    <Link to={"/products"} className='font-DanaMedium'>
+                    <Link to={"/products"} className='font-DanaRegular'>
                         محصولات
                     </Link>
 
-                    <Link to={"/articles"} className='font-DanaMedium'>
+                    <Link to={"/articles"} className='font-DanaRegular'>
                         مقالات
                     </Link>
 
-                    <Link to={"/aboutus"} className='font-DanaMedium'>
+                    <Link to={"/aboutus"} className='font-DanaRegular'>
                         درباره‌ما
                     </Link>
 
