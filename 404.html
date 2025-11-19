@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>سین‌شین - در حال انتقال</title>
     <script>
-        // انتقال ساده به صفحه اصلی
-        sessionStorage.redirect = location.pathname + location.search + location.hash;
-        window.location.href = '/';
+        // 保存原始路径以便React Router可以处理
+        sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+        // 重定向到首页，但会保持原始路径信息
+        window.location.replace('/' + location.search + location.hash);
     </script>
 </head>
 <body>
