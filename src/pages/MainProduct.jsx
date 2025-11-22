@@ -33,10 +33,10 @@ export default function MainProduct() {
       <Helmet>
         <title>{`سین‌شین - ${MainProductData.title}`}</title>
         <meta name="description" content={MainProductData.explain.slice(0,160) + '...'} />
-        <link rel="canonical" href={`https://www.sinshini.ir/product/${params.id}`} />
+        <link rel="canonical" href={`https://www.sinshin-foodpark.ir/product/${params.id}`} />
         <meta property="og:title" content={`سین‌شین - ${MainProductData.title}`} />
         <meta property="og:description" content={MainProductData.explain.slice(0,160) + '...'} />
-        <meta property="og:url" content={`https://www.sinshini.ir/product/${params.id}`} />
+        <meta property="og:url" content={`https://www.sinshin-foodpark.ir/product/${params.id}`} />
         <meta property="og:type" content="product" />
         <meta property="og:image" content={MainProductData.img[0]} />
         <meta property="article:section" content={MainProductData.category} />

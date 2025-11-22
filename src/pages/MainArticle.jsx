@@ -27,10 +27,10 @@ function MainArticleData() {
       <Helmet>
         <title>{`سین‌شین - ${MainArticleData.title}`}</title>
         <meta name="description" content={MainArticleData.simpleDescription.slice(0,160) + '.....'} />
-        <link rel="canonical" href={`https://www.sinshini.ir/article/${params.id}`} />
+        <link rel="canonical" href={`https://www.sinshin-foodpark.ir/article/${params.id}`} />
         <meta property="og:title" content={`سین‌شین - ${MainArticleData.title}`} />
         <meta property="og:description" content={MainArticleData.simpleDescription.slice(0,160) + '.....'} />
-        <meta property="og:url" content={`https://www.sinshini.ir/article/${params.id}`} />
+        <meta property="og:url" content={`https://www.sinshin-foodpark.ir/article/${params.id}`} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={MainArticleData.images[0]} />
         <meta property="article:section" content={MainArticleData.category} />

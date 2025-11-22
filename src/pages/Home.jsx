@@ -36,12 +36,12 @@ export default function Home() {
       <Helmet>
         <title>سین‌شین </title>
         <meta name="description" content="سین شین، رستوران جذاب و مدرن ایرانی" />
-        <link rel="canonical" href="https://www.sinshini.ir" />
+        <link rel="canonical" href="https://www.sinshin-foodpark.ir" />
         <meta property="og:title" content="سین شین" />
-        <meta property="og:description" content="سین شین، رستوران ایرانی  و مدرن" />
-        <meta property="og:url" content="https://www.sinshini.ir" />
+        <meta property="og:description" content="سین شین" />
+        <meta property="og:url" content="https://www.sinshin-foodpark.ir" />
         <meta property="og:type" content="homepage" />
-        <meta property="og:image" content="https://www.sinshini.ir/images/main.png" />
+        <meta property="og:image" content="https://www.sinshin-foodpark.ir/images/main.png" />
         <meta property="article:section" content="رستوران" />
         <meta property="article:published_time" content="2025-03-01T10:00:00Z" />
       </Helmet>

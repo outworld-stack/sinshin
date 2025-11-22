@@ -17,10 +17,10 @@ function AboutUs() {
             <Helmet>
                 <title>سین‌شین - درباره ما</title>
                 <meta name="description" content="کادر سین شین - منوی سین شین" />
-                <link rel="canonical" href="https://www.sinshini.ir/aboutus" />
+                <link rel="canonical" href="https://www.sinshin-foodpark.ir/aboutus" />
                 <meta property="og:title" content="سین‌شین - درباره ما" />
                 <meta property="og:description" content="سین شین- کافه رستورانی متفاوت برای لحظه های شاد شما" />
-                <meta property="og:url" content="https://www.sinshini.ir/aboutus" />
+                <meta property="og:url" content="https://www.sinshin-foodpark.ir/aboutus" />
                 <meta property="og:type" content="aboutus" />
                 <meta property="og:image" content="" />
                 <meta property="article:section" content="درباره ما" />

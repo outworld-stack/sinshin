@@ -40,10 +40,10 @@ export default function Articles() {
             <Helmet>
                 <title>سین‌شین - مقالات</title>
                 <meta name="description" content="سین‌شین - مقالات" />
-                <link rel="canonical" href="https://www.sinshini.ir/articles" />
+                <link rel="canonical" href="https://www.sinshin-foodpark.ir/articles" />
                 <meta property="og:title" content="سین‌شین - مقالات" />
-                <meta property="og:description" content="سین‌شین - مقالات" />
-                <meta property="og:url" content="https://www.sinshini.ir/articles" />
+                <meta property="og:description" content="منوی سین شین" />
+                <meta property="og:url" content="https://www.sinshin-foodpark.ir/articles" />
                 <meta property="og:type" content="articles" />
                 <meta property="og:image" content="" />
                 <meta property="article:section" content="" />

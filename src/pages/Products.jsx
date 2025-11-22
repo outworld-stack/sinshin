@@ -45,10 +45,10 @@ export default function Products() {
       <Helmet>
         <title>سین‌شین - محصولات</title>
         <meta name="description" content="سین‌شین - محصولات" />
-        <link rel="canonical" href="https://www.sinshini.ir/products" />
-        <meta property="og:title" content="سین‌شین - محصولات" />
+        <link rel="canonical" href="https://www.sinshin-foodpark.ir/products" />
+        <meta property="og:title" content="پیتزا مخصوص سین شین" />
         <meta property="og:description" content=" محصولات جذابی تولید میکنه حتما به ما سر بزن سین‌شین - " />
-        <meta property="og:url" content="https://www.sinshini.ir/products" />
+        <meta property="og:url" content="https://www.sinshin-foodpark.ir/products" />
         <meta property="og:type" content="products" />
         <meta property="og:image" content="" />
         <meta property="article:section" content="products" />

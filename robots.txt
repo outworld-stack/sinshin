@@ -13,4 +13,4 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-Sitemap: https://www.sinshini.ir/sitemap.xml
+Sitemap: https://www.sinshin-foodpark.ir/sitemap.xml

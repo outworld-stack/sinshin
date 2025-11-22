@@ -15,4 +15,4 @@ User-agent: Slurp
 Allow: /
 
 # سایت مپ
-Sitemap: https://www.sinshini.ir/sitemap-index.xml
+Sitemap: https://www.sinshin-foodpark.ir/sitemap-index.xml

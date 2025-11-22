@@ -52,7 +52,7 @@ function extractDataFromJsx(filePath) {
 const articles = extractDataFromJsx(path.join(__dirname, '../src/datas/ArticlesData.jsx'));
 const products = extractDataFromJsx(path.join(__dirname, '../src/datas/ProductsDatas.jsx'));
 
-const baseUrl = 'https://www.sinshini.ir';
+const baseUrl = 'https://www.sinshin-foodpark.ir';
 const distPath = path.resolve(__dirname, '../dist');
 
 // Get current date in YYYY-MM-DD format

@@ -44,10 +44,10 @@ function Gallery() {
             <Helmet>
                 <title>سین‌شین - گالری</title>
                 <meta name="description" content="سین‌شین - گالری" />
-                <link rel="canonical" href="https://www.sinshini.ir/gallery" />
+                <link rel="canonical" href="https://www.sinshin-foodpark.ir/gallery" />
                 <meta property="og:title" content="سین‌شین - گالری" />
-                <meta property="og:description" content="سین‌شین - گالری" />
-                <meta property="og:url" content="https://www.sinshini.ir/gallery" />
+                <meta property="og:description" content="منوی سین شین" />
+                <meta property="og:url" content="https://www.sinshin-foodpark.ir/gallery" />
                 <meta property="og:type" content="gallery" />
                 <meta property="og:image" content="" />
                 <meta property="article:section" content="" />
@@ -67,21 +67,21 @@ function Gallery() {
                         <div className="flex flex-col mb-10">
                             <div className="grid md:grid-cols-12 gap-8 lg:mb-11 mb-7">
                                 <div className="md:col-span-4 md:h-[404px] h-[277px] w-full rounded-2xl">
-                                    <img src={gallery1} alt="Gallery image1  sinshini.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-4 md:col-span-6 w-full h-full"></img>
+                                    <img src={gallery1} alt="Gallery image1  sinshin-foodpark.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-4 md:col-span-6 w-full h-full"></img>
                                 </div>
                                 <div className="md:col-span-8 md:h-[404px] h-[277px] w-full rounded-3xl">
-                                    <img src={gallery2} alt="Gallery image2  sinshini.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-8 md:col-span-6 w-full h-full"></img>
+                                    <img src={gallery2} alt="Gallery image2  sinshin-foodpark.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-8 md:col-span-6 w-full h-full"></img>
                                 </div>
                             </div>
                             <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
                                 <div className="h-[277px] w-full rounded-3xl">
-                                    <img src={gallery3} alt="Gallery image3  sinshini.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"></img>
+                                    <img src={gallery3} alt="Gallery image3  sinshin-foodpark.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"></img>
                                 </div>
                                 <div className="h-[277px] w-full rounded-3xl">
-                                    <img src={gallery4} alt="Gallery image4  sinshini.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"></img>
+                                    <img src={gallery4} alt="Gallery image4  sinshin-foodpark.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"></img>
                                 </div>
                                 <div className="h-[277px] w-full rounded-3xl">
-                                    <img src={gallery5} alt="Gallery image5  sinshini.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"></img>
+                                    <img src={gallery5} alt="Gallery image5  sinshin-foodpark.ir" className="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"></img>
                                 </div>
                             </div>
                         </div>
