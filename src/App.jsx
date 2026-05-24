@@ -9,13 +9,11 @@ export default function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // 检查并处理从404.html保存的重定向路径
+
   useEffect(() => {
     const redirectPath = sessionStorage.getItem('redirect');
     if (redirectPath && redirectPath !== location.pathname) {
-      // 清除保存的路径
       sessionStorage.removeItem('redirect');
-      // 重定向到原始路径
       navigate(redirectPath);
     }
   }, [navigate, location.pathname]);
