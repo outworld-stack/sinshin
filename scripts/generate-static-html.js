@@ -17,7 +17,13 @@ const routes = [
 async function generateStaticHTML() {
   console.log('Starting static HTML generation...');
 
-  // Create a Vite server in production mode
+  const distDir = path.resolve(projectRoot, 'dist');
+  // اطمینان از وجود پوشه dist
+  if (!fs.existsSync(distDir)) {
+    fs.mkdirSync(distDir, { recursive: true });
+  }
+
+  // ایجاد سرور Vite در حالت middleware
   const server = await createServer({
     configFile: path.resolve(projectRoot, 'vite.config.js'),
     server: { middlewareMode: true },
@@ -25,32 +31,30 @@ async function generateStaticHTML() {
   });
 
   try {
-    // Generate HTML for each route
     for (const route of routes) {
       console.log(`Processing route: ${route}`);
 
-      // Transform the index.html
-      const transformed = await server.transformIndexHtml(route, 
-        fs.readFileSync(path.resolve(projectRoot, 'index.html'), 'utf-8')
-      );
+      const indexHtmlPath = path.resolve(projectRoot, 'index.html');
+      let htmlContent = fs.readFileSync(indexHtmlPath, 'utf-8');
 
-      // Create the file path
+      // اعمال transform مخصوص مسیر
+      const transformed = await server.transformIndexHtml(route, htmlContent);
+
       let filePath;
-      if (route === '/sinshin/') {
-        filePath = path.resolve(projectRoot, 'dist', 'index.html');
+      if (route === '/') {
+        filePath = path.join(distDir, 'index.html');
       } else {
-        // Remove the /sinshin/ prefix and add .html
-        const routePath = route.replace('/sinshin/', '');
-        filePath = path.resolve(projectRoot, 'dist', `${routePath}.html`);
+        // تبدیل '/products' به 'products.html'
+        const routeName = route.slice(1); // حذف اسلش اول
+        filePath = path.join(distDir, `${routeName}.html`);
       }
 
-      // Ensure directory exists
+      // اطمینان از وجود دایرکتوری (احتیاط)
       const dir = path.dirname(filePath);
       if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
       }
 
-      // Write the HTML file
       fs.writeFileSync(filePath, transformed);
       console.log(`Created: ${filePath}`);
     }
