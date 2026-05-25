@@ -33,7 +33,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build    # اگر خروجی build در پوشه dist است، ./dist بنویس
+          publish_dir: ./dist      # تغییر از ./build به ./dist
           publish_branch: gh-pages
           force_orphan: true
           user_name: 'github-actions[bot]'
