@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main   # اگه شاخه اصلی تو master است، این رو به master تغییر بده
 
 jobs:
   deploy:
@@ -33,7 +33,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./build    # اگر خروجی build در پوشه dist است، ./dist بنویس
           publish_branch: gh-pages
           force_orphan: true
           user_name: 'github-actions[bot]'
