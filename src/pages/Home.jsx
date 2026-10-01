@@ -35,7 +35,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>68670878</title>
-        <meta name='enamad' content='68670878'/>
+        <meta name="enamad" content="68670878" />
         <meta name="description" content="سین شین، رستوران جذاب و مدرن ایرانی" />
         <link rel="canonical" href="https://www.sinshin-foodpark.ir" />
         <meta property="og:title" content="سین شین" />
