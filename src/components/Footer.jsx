@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
+import enamad from '/images/enamad.jpg';
+
 
 export default function Footer() {
     return (
@@ -21,7 +23,7 @@ export default function Footer() {
                             <h2 className='text-sm font-MorabbaMedium bg-gradient-to-l from-sky-500  to-emerald-500 bg-clip-text text-transparent '>
                                 بندرانزلی ، کیلومتر یک پاسداران
                             </h2>
-                            
+
                         </div>
                         {/* <!-- left  --> */}
                         <div className="flex items-start mt-10 lg:mt-0 justify-between gap-x-5 sm:gap-x-16 md:gap-x-24 lg:gap-x-32 ">
@@ -31,7 +33,7 @@ export default function Footer() {
                                 <span className="text-black dark:text-white text-base lg:text-xl font-DanaDemiBold">
                                     دسترسی سریع
                                 </span>
-                                <div className="flex flex-col gap-y-4">
+                                <div className="flex flex-col gap-y-4 items-center">
                                     {/* <Link to="/Rules" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                     قوانین و مقررات
                                 </Link> */}
@@ -41,6 +43,14 @@ export default function Footer() {
                                     <Link to="/Gallery" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                         گالری
                                     </Link>
+                                    <a
+                                        href="https://trustseal.enamad.ir/?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img className='w-20 md:w-25 h-20 md:h-25'
+                                            src={enamad} alt="نماد اعتماد" />
+                                    </a>
                                 </div>
                             </div>
 
