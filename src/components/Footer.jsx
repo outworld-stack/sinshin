@@ -21,7 +21,7 @@ export default function Footer() {
                             <h2 className='text-sm font-MorabbaMedium bg-gradient-to-l from-sky-500  to-emerald-500 bg-clip-text text-transparent '>
                                 بندرانزلی ، کیلومتر یک پاسداران
                             </h2>
-                            
+
                         </div>
                         {/* <!-- left  --> */}
                         <div className="flex items-start mt-10 lg:mt-0 justify-between gap-x-5 sm:gap-x-16 md:gap-x-24 lg:gap-x-32 ">
@@ -31,7 +31,7 @@ export default function Footer() {
                                 <span className="text-black dark:text-white text-base lg:text-xl font-DanaDemiBold">
                                     دسترسی سریع
                                 </span>
-                                <div className="flex flex-col gap-y-4">
+                                <div className="flex flex-col gap-y-4 items-center">
                                     {/* <Link to="/Rules" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                     قوانین و مقررات
                                 </Link> */}
@@ -41,6 +41,7 @@ export default function Footer() {
                                     <Link to="/Gallery" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                         گالری
                                     </Link>
+                                    <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu' alt='' style='cursor:pointer' code='LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu'/></a>
                                 </div>
                             </div>
 
