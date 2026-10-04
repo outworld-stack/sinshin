@@ -41,7 +41,20 @@ export default function Footer() {
                                     <Link to="/Gallery" className="text-slate-500 dark:text-slate-400 text-sm font-DanaMedium">
                                         گالری
                                     </Link>
-                                    <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu' alt='' style='cursor:pointer' code='LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu'/></a>
+                                    <a
+                                        referrerPolicy="origin"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://trustseal.enamad.ir/?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu"
+                                    >
+                                        <img
+                                            referrerPolicy="origin"
+                                            src="https://trustseal.enamad.ir/logo.aspx?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu"
+                                            alt="نماد اعتماد الکترونیکی"
+                                            style={{ cursor: "pointer" }}
+                                            code="LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu"
+                                        />
+                                    </a>
                                 </div>
                             </div>
 
