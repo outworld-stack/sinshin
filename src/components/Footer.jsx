@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router'
-import enamad from '/images/enamad.jpg';
-
 
 export default function Footer() {
     return (
@@ -44,12 +42,18 @@ export default function Footer() {
                                         گالری
                                     </Link>
                                     <a
-                                        href="https://trustseal.enamad.ir/?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu"
+                                        referrerPolicy="origin"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        href="https://trustseal.enamad.ir/?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu"
                                     >
-                                        <img className='w-20 md:w-25 h-20 md:h-25'
-                                            src={enamad} alt="نماد اعتماد" />
+                                        <img
+                                            referrerPolicy="origin"
+                                            src="https://trustseal.enamad.ir/logo.aspx?id=7986156&Code=LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu"
+                                            alt="نماد اعتماد الکترونیکی"
+                                            style={{ cursor: "pointer" }}
+                                            code="LnoeWDPBQqa5OOpFGq1R5GsNkHQE0TIu"
+                                        />
                                     </a>
                                 </div>
                             </div>
